@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.gallery-item {
+    width: calc(20% - 10px); /* Två bilder i bredd */
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center; /* Centrerar bilden horisontellt */
+    align-items: center;     /* Centrerar bilden vertikalt */
+    height: 300px;           /* Fast höjd för gallerirutan */
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+@media (max-width: 768px) {
+    .gallery-item {
+        width: calc(100% - 10px); /* En bild i bredd på mindre skärmar */
+    }
+}
