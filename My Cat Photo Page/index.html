@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Cat Photo Page</title>
+  <style>
+    /* Centering everything */
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh; /* Ensures content is vertically centered */
+      background-color: lightblue;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    h1 {
+      color: darkblue;
+    }
+    img {
+      width: 300px;
+      height: auto;
+    }
+    .cat-facts {
+      border: 2px solid black;
+      padding: 10px;
+      background-color: white;
+      width: 50%; /* Ensures the box is centered with some width */
+    }
+    a {
+      color: darkblue;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Welcome to My Cat Photo Page!</h1>
+
+  <img src="images.jpg" alt="A cute cat">
+
+  <p>This is a page dedicated to my favorite animals: cats!</p>
+
+  <div class="cat-facts">
+    <h2>Fun Facts About Cats</h2>
+    <ul>
+      <li>Cats sleep for 12-16 hours a day.</li>
+      <li>They have retractable claws.</li>
+      <li>Most cats have 5 toes on their front paws but only 4 on their back paws.</li>
+    </ul>
+  </div>
+
+  <p>Learn more about cats on <a href="https://en.wikipedia.org/wiki/Cat">Wikipedia</a>.</p>
+
+</body>
+</html>
