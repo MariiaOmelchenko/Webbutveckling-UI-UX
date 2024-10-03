@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Elements FAQ</title>
+    <style>
+        /* Basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .faq-question {
+            background-color: #007acc;
+            color: white;
+            padding: 15px;
+            border: none;
+            width: 100%;
+            text-align: left;
+            cursor: pointer;
+            outline: none;
+            font-size: 18px;
+            margin-bottom: 5px;
+            transition: background-color 0.3s;
+        }
+        .faq-question:hover {
+            background-color: #005f99;
+        }
+        .faq-answer {
+            background-color: #e0f3ff;
+            padding: 15px;
+            display: none;
+            font-size: 16px;
+            border: 1px solid #007acc;
+            margin-bottom: 10px;
+        }
+        .active + .faq-answer {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>HTML Elements FAQ</h1>
+    <div class="faq-container">
+        <button class="faq-question">What is an HTML element?</button>
+        <div class="faq-answer">
+            <p>An HTML element is a component of an HTML document that defines the structure and content of the web page. It typically consists of a start tag, content, and an end tag. For example: <code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code>.</p>
+        </div>
+
+        <button class="faq-question">What is the difference between a block and inline element?</button>
+        <div class="faq-answer">
+            <p>Block elements take up the full width available and start on a new line (e.g., <code>&lt;div&gt;</code>, <code>&lt;h1&gt;</code>), while inline elements take up only as much width as needed and do not start on a new line (e.g., <code>&lt;span&gt;</code>, <code>&lt;a&gt;</code>).</p>
+        </div>
+
+        <button class="faq-question">How do you create a hyperlink in HTML?</button>
+        <div class="faq-answer">
+            <p>To create a hyperlink, use the <code>&lt;a&gt;</code> tag and set the <code>href</code> attribute to the desired URL. For example: <code>&lt;a href="https://www.example.com"&gt;Click here&lt;/a&gt;</code>.</p>
+        </div>
+
+        <button class="faq-question">What is the purpose of the <code>&lt;head&gt;</code> element?</button>
+        <div class="faq-answer">
+            <p>The <code>&lt;head&gt;</code> element contains metadata about the HTML document, such as the document's title, links to stylesheets, and meta tags that define the character set or viewport settings.</p>
+        </div>
+
+        <button class="faq-question">What is the role of the <code>&lt;meta&gt;</code> tag?</button>
+        <div class="faq-answer">
+            <p>The <code>&lt;meta&gt;</code> tag provides metadata about the HTML document, such as the character set, author, description, or keywords. It is placed inside the <code>&lt;head&gt;</code> element and does not have a closing tag.</p>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript for toggling the accordion effect
+        const questions = document.querySelectorAll('.faq-question');
+        
+        questions.forEach(question => {
+            question.addEventListener('click', () => {
+                question.classList.toggle('active');
+            });
+        });
+    </script>
+
+</body>
+</html>
