@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+header {
+    padding: 20px;
+    text-align: center;
+    color: #373c41;
+    size: 35px;
+
+}
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
