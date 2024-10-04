@@ -15,7 +15,7 @@ body {
 }
 
 .blog-container {
-    max-width: 800px;
+    max-width: 500px;
     margin: 0 auto;
     background-color: #fff;
     border-radius: 10px;
@@ -46,7 +46,7 @@ h1, h2, h3 {
 }
 
 .post-image img {
-    width: 100%;
+    width: 50%;
     height: auto;
     border-radius: 10px;
     margin-bottom: 10px;
