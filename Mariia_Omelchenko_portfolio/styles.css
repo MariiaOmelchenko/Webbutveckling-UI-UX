@@ -62,13 +62,15 @@ article {
 }
 
 footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
-    position: relative;
+    background-image: url('footer.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    color: white; 
+    text-align: center; 
+    padding: 20px; 
+    position: relative; 
 }
+
 
 .profile-image {
     width: 200px;
