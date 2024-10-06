@@ -137,3 +137,31 @@ footer {
     flex: 1; 
     text-align: left; 
 }
+
+.section-image {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.section-image:hover {
+    transform: scale(1.05);
+}
+
+.project-item {
+    display: flex;
+    margin: 15px 0;
+}
+
+.project-image {
+    width: 100px; 
+    height: auto; 
+    margin-right: 15px; 
+    border-radius: 5px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.project-text {
+    flex: 1; 
+}

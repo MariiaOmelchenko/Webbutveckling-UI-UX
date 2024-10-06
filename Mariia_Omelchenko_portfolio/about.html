@@ -21,59 +21,71 @@
         </ul>
     </nav>
 
-    <article>
-        <h2>Personlig Information</h2>
-        
-        <button class="accordion">Intressen</button>
-        <div class="panel">
-            <ul>
-                <li>Stickning</li>
-                <li>Skidåkning</li>
-                <li>Cykling</li>
-                <li>Skridskoåkning</li>
-                <li>Handarbete</li>
-            </ul>
-        </div>
+    <main>
+        <section>
+            <h2>Personlig Information</h2>
+        </section>
 
-        <button class="accordion">Personliga Egenskaper</button>
-        <div class="panel">
-            <ul>
-                <li>Noggrann</li>
-                <li>Ansvarstagande</li>
-                <li>Kreativ</li>
-                <li>Initiativrik</li>
-                <li>Snabblärd</li>
-            </ul>
-        </div>
+        <section class="accordion-section">
+            <button class="accordion">Intressen</button>
+            <div class="panel">
+                <ul>
+                    <li>Stickning</li>
+                    <li>Skidåkning</li>
+                    <li>Cykling</li>
+                    <li>Skridskoåkning</li>
+                    <li>Handarbete</li>
+                </ul>
+            </div>
+        </section>
 
-        <button class="accordion">Språkkunskaper</button>
-        <div class="panel">
-            <ul>
-                <li>Ukrainska (Modersmål)</li>
-                <li>Ryska (Modersmål)</li>
-                <li>Svenska (Grundläggande)</li>
-                <li>Engelska (Grundläggande)</li>
-            </ul>
-        </div>
+        <section class="accordion-section">
+            <button class="accordion">Personliga Egenskaper</button>
+            <div class="panel">
+                <ul>
+                    <li>Noggrann</li>
+                    <li>Ansvarstagande</li>
+                    <li>Kreativ</li>
+                    <li>Initiativrik</li>
+                    <li>Snabblärd</li>
+                </ul>
+            </div>
+        </section>
 
-        <button class="accordion">Tekniska Färdigheter</button>
-        <div class="panel">
-            <ul>
-                <li>Programmeringsspråk: C/C++, Delphi, PHP, JavaScript, HTML, SQL, Python, Assembler</li>
-                <li>Verktyg och teknologier: Torgsoft, Wirthmart, Joomla, MS Power BI, Jira, MS SQL, MySQL, Microsoft Office, Битрикс24, DoctorEleks, Emcimed, Grafana, ClickHouse, GitHub, Visual Studio Code, Azure DevOps,Visual Studio</li>
-                <li>Erfarenhet med integration av medicinska system och datavisualisering.</li>
-            </ul>
-        </div>
+        <section class="accordion-section">
+            <button class="accordion">Språkkunskaper</button>
+            <div class="panel">
+                <ul>
+                    <li>Ukrainska (Modersmål)</li>
+                    <li>Ryska (Modersmål)</li>
+                    <li>Svenska (Grundläggande)</li>
+                    <li>Engelska (Grundläggande)</li>
+                </ul>
+            </div>
+        </section>
 
-        <button class="accordion">Övrigt</button>
-        <div class="panel">
-            <ul>
-                <li>Körkort: Kategori B</li>
-                <li>Ledarskapserfarenhet: Över tre års erfarenhet av ledarskap och utbildning av personal inom IT-branschen.</li>
-                <li>Mer än fyra års erfarenhet inom IT, inklusive medicinsk automation och utveckling.</li>
-            </ul>
-        </div>
-    </article>
+        <section class="accordion-section">
+            <button class="accordion">Tekniska Färdigheter</button>
+            <div class="panel">
+                <ul>
+                    <li>Programmeringsspråk: C/C++, Delphi, PHP, JavaScript, HTML, SQL, Python, Assembler</li>
+                    <li>Verktyg och teknologier: Torgsoft, Wirthmart, Joomla, MS Power BI, Jira, MS SQL, MySQL, Microsoft Office, Битрикс24, DoctorEleks, Emcimed, Grafana, ClickHouse, GitHub, Visual Studio Code, Azure DevOps, Visual Studio</li>
+                    <li>Erfarenhet med integration av medicinska system och datavisualisering.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="accordion-section">
+            <button class="accordion">Övrigt</button>
+            <div class="panel">
+                <ul>
+                    <li>Körkort: Kategori B</li>
+                    <li>Ledarskapserfarenhet: Över tre års erfarenhet av ledarskap och utbildning av personal inom IT-branschen.</li>
+                    <li>Mer än fyra års erfarenhet inom IT, inklusive medicinsk automation och utveckling.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
 
     <footer>
         <p>© 2024 Mariia Omelchenko</p>
@@ -93,7 +105,10 @@
                 }
             });
         });
+
+        function showDetails(title, details) {
+            alert(title + ': ' + details);
+        }
     </script>
 </body>
 </html>
-
