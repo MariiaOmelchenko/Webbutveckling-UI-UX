@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Om mig</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Om mig</h1>
+        </div>
+    </header>
+  
+    <nav>
+        <ul>
+            <li><a href="index.html">Hem</a></li>
+            <li><a href="experience.html">Erfarenhet</a></li>
+            <li><a href="projects.html">Projekt</a></li>
+        </ul>
+    </nav>
+
+    <article>
+        <h2>Personlig Information</h2>
+        
+        <button class="accordion">Intressen</button>
+        <div class="panel">
+            <ul>
+                <li>Stickning</li>
+                <li>Skidåkning</li>
+                <li>Cykling</li>
+                <li>Skridskoåkning</li>
+                <li>Handarbete</li>
+            </ul>
+        </div>
+
+        <button class="accordion">Personliga Egenskaper</button>
+        <div class="panel">
+            <ul>
+                <li>Noggrann</li>
+                <li>Ansvarstagande</li>
+                <li>Kreativ</li>
+                <li>Initiativrik</li>
+                <li>Snabblärd</li>
+            </ul>
+        </div>
+
+        <button class="accordion">Språkkunskaper</button>
+        <div class="panel">
+            <ul>
+                <li>Ukrainska (Modersmål)</li>
+                <li>Ryska (Modersmål)</li>
+                <li>Svenska (Grundläggande)</li>
+                <li>Engelska (Grundläggande)</li>
+            </ul>
+        </div>
+
+        <button class="accordion">Tekniska Färdigheter</button>
+        <div class="panel">
+            <ul>
+                <li>Programmeringsspråk: C/C++, Delphi, PHP, JavaScript, HTML, SQL, Python, Assembler</li>
+                <li>Verktyg och teknologier: Torgsoft, Wirthmart, Joomla, MS Power BI, Jira, MS SQL, MySQL, Microsoft Office, Битрикс24, DoctorEleks, Emcimed, Grafana, ClickHouse, GitHub, Visual Studio Code, Azure DevOps,Visual Studio</li>
+                <li>Erfarenhet med integration av medicinska system och datavisualisering.</li>
+            </ul>
+        </div>
+
+        <button class="accordion">Övrigt</button>
+        <div class="panel">
+            <ul>
+                <li>Körkort: Kategori B</li>
+                <li>Ledarskapserfarenhet: Över tre års erfarenhet av ledarskap och utbildning av personal inom IT-branschen.</li>
+                <li>Mer än fyra års erfarenhet inom IT, inklusive medicinsk automation och utveckling.</li>
+            </ul>
+        </div>
+    </article>
+
+    <footer>
+        <p>© 2024 Mariia Omelchenko</p>
+    </footer>
+
+    <script>
+        const accordions = document.querySelectorAll('.accordion');
+
+        accordions.forEach(accordion => {
+            accordion.addEventListener('click', function() {
+                this.classList.toggle('active');
+                const panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+

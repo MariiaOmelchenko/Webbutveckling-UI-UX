@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekt</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Mina Projekt</h1>
+        </div>
+    </header>
+   
+    <nav>
+        <ul>
+            <li><a href="index.html">Hem</a></li>
+            <li><a href="experience.html">Erfarenhet</a></li>
+            <li><a href="about.html">Om mig</a></li>
+        </ul>
+    </nav>
+
+    <article>
+        <h2>Projekt</h2>
+        
+        <button class="accordion">Dashboard skapande med Grafana</button>
+        <div class="panel">
+            <ul>
+                <li>Integrering av data från MS-SQL och ClickHouse-databaser för skapandet av interaktiva dashboards med Grafana.</li>
+                <li>Projektet fokuserade på dataanalys och visualisering.</li>
+            </ul>
+        </div>
+
+        <button class="accordion">Automatisering av medicinska system</button>
+        <div class="panel">
+            <ul>
+                <li>Implementering av automatiserade system för medicinska institutioner.</li>
+                <li>Detta inkluderade utbildning av personal, installation av system och utveckling av rapporter för att förbättra effektiviteten inom administration.</li>
+            </ul>
+             </p>
+        </div>
+
+        <button class="accordion">Utveckling av webbplats för e-handel (skönhetsbutik)</button>
+        <div class="panel">
+            <ul>
+                <li>Ansvarig för design och utveckling av en webbplats för en skönhetsbutik.</li>
+                <li>Projektet innefattade databassynkronisering, marknadsföring och teknisk support.</li>
+            </ul>
+        </div>
+
+        <button class="accordion">Utveckling av webbplats för byggvaruhandel</button>
+        <div class="panel">
+            <ul>
+                <li>Utveckling av en fullfjädrad webbplats för en detaljhandel med byggmaterial, inklusive innehållshantering, databassynkronisering och SEO-optimering. </li>
+                <li>I projektet ingick kundtjänststöd och personalutbildning i att använda Torgsoft-systemet.</li>
+            </ul>
+        </div>
+
+        <button class="accordion">Utveckling av produkt: "Smart lås" med Arduino och C/C++</button>
+        <div class="panel">
+            <ul>
+                <li>Design och implementering av ett IoT-baserat smart lås med hjälp av Arduino och programmering i C/C++.</li>
+                <li>Projektet inkluderade arbete med sensorer, motorstyrning och säker datahantering för att utveckla en säker och användarvänlig produkt för hemautomation.</li>
+
+        </ul>
+        </div>
+    </article>
+
+    <footer>
+        <p>© 2024 Mariia Omelchenko</p>
+    </footer>
+
+    <script>
+        const accordions = document.querySelectorAll('.accordion');
+
+        accordions.forEach(accordion => {
+            accordion.addEventListener('click', function() {
+                this.classList.toggle('active');
+                const panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+
+

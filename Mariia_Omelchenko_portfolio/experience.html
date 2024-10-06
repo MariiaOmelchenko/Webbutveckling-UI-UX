@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erfarenhet</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Min Yrkeserfarenhet</h1>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Hem</a></li>
+            <li><a href="projects.html">Projekt</a></li>
+            <li><a href="about.html">Om mig</a></li>
+        </ul>
+    </nav>
+
+    <article>
+        <h2>Yrkeserfarenhet</h2>
+
+        <button class="accordion">Infovista, Software Designer. Skellefteå, Sverige. (2022)</button>
+        <div class="panel">
+            <ul>
+                <li>Skapade dashboards för testverktyg med Grafana från MS-SQL och ClickHouse-databaser.</li>
+                <li>Rapportering och testning av nya versioner av Grafana, ClickHouse, MS-SQL.</li>
+                <li>Testning och rapportering av ClickHouse-funktioner.</li>
+            </ul>
+        </div>
+
+        <button class="accordion">Medexpert, Lead Implementation Specialist. Kyiv, Ukraina. (2019 - 2022)</button>
+        <div class="panel">
+            <ul>
+                <li>Utbildning av användare i automatiserade system inom medicin.</li>
+                <li>Installation och testning av medicinskt automatiserade system.</li>
+                <li>Utveckling av SQL-frågor för rapportering och skapande av dokumentmallar</li>
+            </ul>
+        </div>
+
+        <button class="accordion">Internet-shop "Beauty-secret", Site Administrator. Kyiv, Ukraina. (2014 - 2015)</button>
+        <div class="panel">
+            <ul>
+                <li>Publicering av innehåll och synkronisering av databaser.</li>
+                <li>Marknadsföring av hemsidan och kundsupport.</li>
+                <li>Projektledning och grafisk design.</li>
+                <li>Utbildning i TORGSOFT-programmet.</li>
+            </ul>
+        </div>
+
+        <button class="accordion">Stroyimperiya, Senior Site Administrator. Enakievo, Ukraina. (2013 - 2014)</button>
+        <div class="panel">
+            <ul>
+                <li>Hantering av webbplatsinnehåll och databassynkronisering.</li>
+                <li>Marknadsföring av hemsidan och kundsupport.</li>
+                <li> Projektledning och arbetsflödesorganisation.</li>
+                <li>Utbildning i TORGSOFT-programmet.</li>
+            </ul>
+        </div>
+    </article>
+
+    <article>
+        <h2>Utbildning</h2>
+
+        <button class="accordion">Chas Academy, Skellefteå (2023 - 2025)</button>
+        <div class="panel">
+            <p>Systemutvecklare C/C++. Lärde mig avancerad systemutveckling med fokus på C/C++.</p>
+        </div>
+
+        <button class="accordion">Donbass State Engineering Academy, Kramatorsk, Ukraina(2013 - 2018)</button>
+        <div class="panel">
+            <p>Master i automation och datorintegrerad teknologi. Specialisering inom automation.</p>
+        </div>
+
+        <button class="accordion"> Enakievo Metallurgical College, Enakievo, Ukraina(2010 - 2013)</button>
+        <div class="panel">
+            <p>Junior Specialist i mjukvaruutveckling. Specialisering inom mjukvaruutveckling.</p>
+        </div>
+    </article>
+
+    <footer>
+        <p>© 2024 Mariia Omelchenko</p>
+    </footer>
+
+    <script>
+        const accordions = document.querySelectorAll('.accordion');
+
+        accordions.forEach(accordion => {
+            accordion.addEventListener('click', function() {
+                this.classList.toggle('active');
+                const panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        });
+    </script>
+</body>
+</html>
