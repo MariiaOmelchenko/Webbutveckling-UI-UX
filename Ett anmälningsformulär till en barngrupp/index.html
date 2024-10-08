@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anmälningsformulär till Barngrupp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Anmälan till Barngrupp</h2>
+        <form action="#" method="post">
+            <label for="child-name">Barnets namn:</label>
+            <input type="text" id="child-name" name="child_name" placeholder="Ange barnets namn" required>
+
+            <label for="parent-name">Föräldrars namn:</label>
+            <input type="text" id="parent-name" name="parent_name" placeholder="Ange föräldrars namn" required>
+
+            <label for="contact">Kontaktväg (telefon eller e-post):</label>
+            <input type="text" id="contact" name="contact" placeholder="Ange telefonnummer eller e-post" required>
+
+            <label for="age">Barnets ålder:</label>
+            <input type="number" id="age" name="age" placeholder="8" required>
+
+            <label for="group">Välj grupp:</label>
+            <select id="group" name="group" required>
+                <option value="">Välj grupp</option>
+                <option value="grupp1">Grupp 1 (5-7 år)</option>
+                <option value="grupp2">Grupp 2 (8-10 år)</option>
+                <option value="grupp3">Grupp 3 (11-13 år)</option>
+            </select>
+
+            <label for="allergies">Allergier (valfritt):</label>
+            <input type="text" id="allergies" name="allergies" placeholder="Ange eventuella allergier">
+
+            <label for="payment">Betalningspreferens:</label>
+            <select id="payment" name="payment" required>
+                <option value="">Välj betalningsmetod</option>
+                <option value="card">Kort</option>
+                <option value="swish">Swish</option>
+                <option value="invoice">Faktura</option>
+            </select>
+
+            <button type="submit">Anmäl</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
