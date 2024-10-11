@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotell Chas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Sidhuvud och navigationsfält -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Hem</a></li>
+                <li><a href="#about">Om oss</a></li>
+                <li><a href="#rooms">Rum</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </nav>
+        <h1>Välkommen till Hotell Chas</h1>
+    </header>
+
+    <!-- Sektion: Om oss -->
+    <section id="about">
+        <h2>Om Hotell Chas</h2>
+        <p>Hotell Chas är ett fristående hotell som erbjuder fantastisk service och bekväma rum för alla gäster.</p>
+        <img src="hotel.jpg" alt="Bild av Hotell Chas">
+    </section>
+
+    <!-- Sektion: Rum -->
+    <section id="rooms">
+        <h2>Våra Rum</h2>
+        <div class="room-columns">
+            <div class="room">
+                <h3>Standardrum</h3>
+                <p>Ett bekvämt rum för två personer.</p>
+                <img src="room_1.jpg" alt="Standardrum">
+            </div>
+            <div class="room">
+                <h3>Lyxrum</h3>
+                <p>Vårt mest exklusiva rum för en lyxig vistelse.</p>
+                <img src="room_2.jpg" alt="Lyxrum">
+            </div>
+        </div>
+    </section>
+
+    <!-- Sektion: Kontaktformulär -->
+    <section id="contact">
+        <h2>Kontakta oss</h2>
+        <form action="submit-form.php" method="POST">
+            <label for="name">Namn:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">E-post:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Meddelande:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            
+            <button type="submit">Skicka</button>
+        </form>
+    </section>
+
+    <!-- Sidfot -->
+    <footer>
+        <p>&copy; 2024 Hotell Chas. Alla rättigheter förbehållna.</p>
+    </footer>
+</body>
+</html>
