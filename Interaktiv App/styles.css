@@ -1,0 +1,68 @@
+/* Grundlayout för sidan */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+  }
+  
+  /* Container för kartan och sidofältet */
+  #container {
+    display: flex;
+    gap: 20px;
+  }
+  
+  /* Rutnät 4x4 */
+  #grid {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(4, 100px);
+    gap: 5px;
+  }
+  
+  /* Ruta i rutnätet */
+  .cell {
+    background-color: #ccc;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+  }
+  
+  /* Hjälten */
+  .hero {
+    background-color: #4caf50;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+  }
+  
+  /* Sidofältet */
+  #sidebar {
+    width: 200px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #event-message {
+    margin-bottom: 10px;
+  }
+  
+  #action-button {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #2196f3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #action-button:hover {
+    background-color: #1976d2;
+  }
+  
