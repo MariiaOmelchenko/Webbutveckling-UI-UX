@@ -7,7 +7,7 @@ const cellsData = [
   { x: 50, y: 50, background: 'url("forest.avif")' },
   { x: 300, y: 100, background: 'url("mountain.avif")' },
   { x: 600, y: 200, background: 'url("river.avif")' },
-  { x: 200, y: 400, background: 'url("village.avif")' }
+  { x: 900, y: 150, background: 'url("village.avif")' }
 ];
 
 let gold = 50;
