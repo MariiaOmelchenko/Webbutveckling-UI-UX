@@ -1,0 +1,48 @@
+/* Grundlayout för hela sidan */
+body {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #f0f0f0;
+    height: 100vh;
+  }
+  
+  /* Karta som container */
+  #map-container {
+    position: relative;
+    width: 80%;
+    height: 100%;
+    border: 2px solid #333;
+    background-color: #eef2f3;
+    overflow: hidden;
+  }
+  
+  /* Rutor med slumpmässig position */
+  .cell {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* Token (spelmarkör) */
+  .token {
+    width: 80px;
+    height: 80px;
+    background-color: rgba(255, 0, 0, 0.8);
+    border-radius: 50%;
+    position: absolute;
+    transition: 0.3s;
+  }
+  
+  /* Sidofält */
+  #sidebar {
+    width: 20%;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
