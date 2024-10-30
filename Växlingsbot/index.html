@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Växlingsbot</title>
+</head>
+<body>
+    <h1>Valutaomvandlare</h1>
+    <label for="amount">Belopp:</label>
+    <input type="number" id="amount" placeholder="Ange belopp" required>
+
+    <label for="currency">Från:</label>
+    <select id="currency">
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+        <option value="SEK">SEK</option>
+        <!-- Lägg till fler valutor vid behov -->
+    </select>
+
+    <label for="convertTo">Till:</label>
+    <select id="convertTo">
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+        <option value="SEK">SEK</option>
+        <!-- Lägg till fler valutor vid behov -->
+    </select>
+
+    <button onclick="convertCurrency()">Omvandla</button>
+
+    <div id="result">
+        <!-- Resultatet av konverteringen kommer att visas här -->
+    </div>
+
+    <script src="currencyConverter.js"></script>
+</body>
+</html>
