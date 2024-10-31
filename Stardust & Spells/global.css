@@ -1,0 +1,32 @@
+
+body {
+    margin: 0;
+    line-height: normal;
+}
+
+
+:root {
+    
+    /* fonts */
+    --m3-body-large: Roboto;
+    --font-kavoon: Kavoon;
+    --font-jaini: Jaini;
+    
+    /* font sizes */
+    --m3-body-large-size: 16px;
+    --font-size-21xl: 40px;
+    
+    /* Colors */
+    --background-default-default: #fff;
+    --m3-sys-light-on-surface-variant: #49454f;
+    --color-black: #000;
+    --border-neutral-tertiary: #b2b2b2;
+    
+    /* Paddings */
+    --padding-5xs: 8px;
+    
+    /* Border radiuses */
+    --br-81xl: 100px;
+    --br-9xs: 4px;
+    
+}
